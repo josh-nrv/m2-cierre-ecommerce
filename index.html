@@ -49,30 +49,43 @@
     </nav>
 
     <section class="hero-section">
-        <div class="container bg-body-secondary p-5 my-3 rounded">
-            <h1 class="display-4">Bienvenido a MiTienda</h1>
-            <p class="lead">Descripción de tienda o slogan</p>
-            <a href="#seccion-productos" class="btn btn-primary btn-lg">Ver Productos</a>
+        <div id="hero-img" class="container p-5 my-3 rounded d-flex">
+            <div class="p-3 bg-dark rounded-3 bg-opacity-75 mx-auto">
+                <h1 class="display-4">Bienvenido a MiTienda</h1>
+                <p class="lead">Descripción de tienda o slogan</p>
+                <a href="#seccion-productos" class="btn btn-primary btn-lg">Ver Productos</a>
+            </div>
         </div>
     </section>
-    <!-- <header class="py-3">
-        <h1 class="text-center">Sitio E-Commerce</h1>
-    </header> -->
 
     <main class="container">
         <section class="" id="seccion-productos">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="sidebar">
-                        <h5>Filtros de categoria</h5>
+                    <div class="sidebar p-4 rounded bg-body-tertiary">
+                        <h5>Filtrar por Tipo</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#">Categoria 1</a></li>
-                            <li><a href="#">Categoria 2</a></li>
-                            <li><a href="#">Categoria 3</a></li>
+                            <li><a href="#">Cartas</a></li>
+                            <li><a href="#">Juego de mesa</a></li>
+                            <li><a href="#">Dados</a></li>
                         </ul>
-                        <h5>Rango de precio: </h5>
-                        <input type="range" class="form-range" min="0" max="1000" step="10" id="priceRange">
-                        <p>Precio: $<span id="priceValue">500</span></p>
+                        <h5>Filtrar por categoria</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Fiesta</a></li>
+                            <li><a href="#">Familiares</a></li>
+                            <li><a href="#">Cooperativos</a></li>
+                            <li><a href="#">Competitivos</a></li>
+                            <li><a href="#">Estrategia</a></li>
+                        </ul>
+                        <h5>Desde: </h5>
+                        <input type="range" class="form-range" min="0" max="2000000" step="1000">
+                        <p>Precio: $<span>1000</span></p>
+                        <h5>Hasta: </h5>
+                        <input type="range" class="form-range" min="0" max="2000000" step="1000">
+                        <p>Precio: $<span>2000000</span></p>
+                        <div class="d-flex justify-content-center mt-4">
+                             <input class="btn btn-primary" type="button" value="Aplicar Filtros">
+                        </div>
                     </div>
                 </div>
                 <div class="col-9">
@@ -80,12 +93,12 @@
                         <div class="col-4">
 
                             <div class="card">
-                                <img src="https://picsum.photos/id/684/800/800" class="card-img-top img-fluid"
+                                <img src="./assets/img/acatan.jpg" class="card-img-top img-fluid"
                                     alt="Producto" onerror="this.onerror=null;this.src='https://placehold.co/400x300';">
                                 <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción producto</p>
-                                    <p class="card-text text-success fs-5 text-end">Precio $4.500.-</p>
+                                    <h5 class="card-title">Mal juego 1</h5>
+                                    <p class="card-text">Juego base</p>
+                                    <p class="card-text text-success fs-5 text-end">Precio $20.900.-</p>
                                 </div>
                                 <div class="d-flex justify-content-between card-footer">
                                     <a href="producto-detalle.html" class="btn btn-primary">Ver detalles</a>
@@ -98,12 +111,12 @@
                         <div class="col-4">
 
                             <div class="card">
-                                <img src="https://picsum.photos/id/684/800/800" class="card-img-top img-fluid"
+                                <img src="./assets/img/afigure.jpg" class="card-img-top img-fluid"
                                     alt="Producto" onerror="this.onerror=null;this.src='https://placehold.co/400x300';">
                                 <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción producto</p>
-                                    <p class="card-text text-success fs-5 text-end">Precio $4.500.-</p>
+                                    <h5 class="card-title">Figurita Orco</h5>
+                                    <p class="card-text">30mm</p>
+                                    <p class="card-text text-success fs-5 text-end">Precio $9.900.-</p>
                                 </div>
                                 <div class="d-flex justify-content-between card-footer">
                                     <a href="producto-detalle.html" class="btn btn-primary">Ver detalles</a>
@@ -114,12 +127,12 @@
                         <div class="col-4">
 
                             <div class="card">
-                                <img src="https://picsum.photos/id/684/800/800" class="card-img-top img-fluid"
+                                <img src="./assets/img/afiguredragon.jpg" class="card-img-top img-fluid"
                                     alt="Producto" onerror="this.onerror=null;this.src='https://placehold.co/400x300';">
                                 <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción producto</p>
-                                    <p class="card-text text-success fs-5 text-end">Precio $4.500.-</p>
+                                    <h5 class="card-title">Figurita Dragón</h5>
+                                    <p class="card-text">30mm</p>
+                                    <p class="card-text text-success fs-5 text-end">Precio $11.900.-</p>
                                 </div>
                                 <div class="d-flex justify-content-between card-footer">
                                     <a href="producto-detalle.html" class="btn btn-primary">Ver detalles</a>
@@ -130,12 +143,12 @@
                         <div class="col-4">
 
                             <div class="card">
-                                <img src="https://picsum.photos/id/684/800/800" class="card-img-top img-fluid"
+                                <img src="./assets/img/ajuego.jpg" class="card-img-top img-fluid"
                                     alt="Producto" onerror="this.onerror=null;this.src='https://placehold.co/400x300';">
                                 <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción producto</p>
-                                    <p class="card-text text-success fs-5 text-end">Precio $4.500.-</p>
+                                    <h5 class="card-title">Ride to ticket</h5>
+                                    <p class="card-text">Juego base</p>
+                                    <p class="card-text text-success fs-5 text-end">Precio $15.000.-</p>
                                 </div>
                                 <div class="d-flex justify-content-between card-footer">
                                     <a href="producto-detalle.html" class="btn btn-primary">Ver detalles</a>
@@ -146,12 +159,12 @@
                         <div class="col-4">
 
                             <div class="card">
-                                <img src="https://picsum.photos/id/684/800/800" class="card-img-top img-fluid"
+                                <img src="./assets/img/amono.jpg" class="card-img-top img-fluid"
                                     alt="Producto" onerror="this.onerror=null;this.src='https://placehold.co/400x300';">
                                 <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción producto</p>
-                                    <p class="card-text text-success fs-5 text-end">Precio $4.500.-</p>
+                                    <h5 class="card-title">Pelea familiar</h5>
+                                    <p class="card-text">Juego base</p>
+                                    <p class="card-text text-success fs-5 text-end">Precio $12.500.-</p>
                                 </div>
                                 <div class="d-flex justify-content-between card-footer">
                                     <a href="producto-detalle.html" class="btn btn-primary">Ver detalles</a>
@@ -162,12 +175,12 @@
                         <div class="col-4">
 
                             <div class="card">
-                                <img src="https://picsum.photos/id/684/800/800" class="card-img-top img-fluid"
+                                <img src="./assets/img/aagricola.jpg" class="card-img-top img-fluid"
                                     alt="Producto" onerror="this.onerror=null;this.src='https://placehold.co/400x300';">
                                 <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción producto</p>
-                                    <p class="card-text text-success fs-5 text-end">Precio $4.500.-</p>
+                                    <h5 class="card-title">Mal juego 2</h5>
+                                    <p class="card-text">Juego base</p>
+                                    <p class="card-text text-success fs-5 text-end">Precio $35.000.-</p>
                                 </div>
                                 <div class="d-flex justify-content-between card-footer">
                                     <a href="producto-detalle.html" class="btn btn-primary">Ver detalles</a>
@@ -178,12 +191,12 @@
                         <div class="col-4">
 
                             <div class="card">
-                                <img src="https://picsum.photos/id/684/800/800" class="card-img-top img-fluid"
+                                <img src="./assets/img/adados.jpg" class="card-img-top img-fluid"
                                     alt="Producto" onerror="this.onerror=null;this.src='https://placehold.co/400x300';">
                                 <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción producto</p>
-                                    <p class="card-text text-success fs-5 text-end">Precio $4.500.-</p>
+                                    <h5 class="card-title">Set de dados rol</h5>
+                                    <p class="card-text">7 dados</p>
+                                    <p class="card-text text-success fs-5 text-end">Precio $8.500.-</p>
                                 </div>
                                 <div class="d-flex justify-content-between card-footer">
                                     <a href="producto-detalle.html" class="btn btn-primary">Ver detalles</a>
@@ -194,12 +207,12 @@
                         <div class="col-4">
 
                             <div class="card">
-                                <img src="https://picsum.photos/id/684/800/800" class="card-img-top img-fluid"
+                                <img src="./assets/img/adesign.jpg" class="card-img-top img-fluid"
                                     alt="Producto" onerror="this.onerror=null;this.src='https://placehold.co/400x300';">
                                 <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción producto</p>
-                                    <p class="card-text text-success fs-5 text-end">Precio $4.500.-</p>
+                                    <h5 class="card-title">Design Town</h5>
+                                    <p class="card-text">Juego base</p>
+                                    <p class="card-text text-success fs-5 text-end">Precio $8.000.-</p>
                                 </div>
                                 <div class="d-flex justify-content-between card-footer">
                                     <a href="producto-detalle.html" class="btn btn-primary">Ver detalles</a>
@@ -210,12 +223,12 @@
                         <div class="col-4">
 
                             <div class="card">
-                                <img src="https://picsum.photos/id/684/800/800" class="card-img-top img-fluid"
+                                <img src="./assets/img/ajuego2.jpg" class="card-img-top img-fluid"
                                     alt="Producto" onerror="this.onerror=null;this.src='https://placehold.co/400x300';">
                                 <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción producto</p>
-                                    <p class="card-text text-success fs-5 text-end">Precio $4.500.-</p>
+                                    <h5 class="card-title">Juego random</h5>
+                                    <p class="card-text">Juego base</p>
+                                    <p class="card-text text-success fs-5 text-end">Precio $23.900.-</p>
                                 </div>
                                 <div class="d-flex justify-content-between card-footer">
                                     <a href="producto-detalle.html" class="btn btn-primary">Ver detalles</a>
@@ -233,6 +246,7 @@
         </section>
     </main>
     <footer class="bg-body-tertiary py-3 mt-3">
+        <p class="text-center">Página de e-commerce ficticia con fines demostrativos.</p>
         <p class="text-center">Proyecto desarrollado por <strong>Joshua Rebolledo</strong>, <em>2025</em></p>
     </footer>
 </body>

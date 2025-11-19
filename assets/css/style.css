@@ -1,17 +1,21 @@
 #seccion-productos .card img, .encabezado-detalle img {
     aspect-ratio: 4/3;
 }
-.hero-section {
-    /* padding: 100px 0; */
+.hero-section #hero-img{
     text-align: center;
+    background-image: url(../img/fondo-hero.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .sidebar {
-    padding: 20px;
-    border-radius: 5px;
+    /* padding: 20px; */
+    /* border-radius: 5px; */
     position: sticky; /* Makes the sidebar sticky */
     top: 20px; /* Makes it stick when 20px away from the top of the viewport */
-    height: 80vh; /* Optional: Ensures the sidebar has a fixed height and doesn't expand too much */
 }
 .sidebar h5 {
     margin-bottom: 20px;
+}
+.card img {
+    object-fit: cover;
 }
