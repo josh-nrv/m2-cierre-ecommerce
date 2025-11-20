@@ -1,4 +1,4 @@
-#seccion-productos .card img, .encabezado-detalle img {
+#seccion-productos .card img, .encabezado-detalle img, .detalle-carrito img {
     aspect-ratio: 4/3;
 }
 .hero-section #hero-img{
@@ -19,4 +19,8 @@
 .card img {
     object-fit: cover;
     
+}
+.detalle-carrito img{
+    object-fit: cover;
+    width: 200px;
 }
